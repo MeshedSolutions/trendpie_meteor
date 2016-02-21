@@ -1,0 +1,162 @@
+<template name="campaignCreate">
+    {{> campaignAdminMenu }}
+
+    <form>
+        <div>
+            <input name="client" type="textbox" placeholder="Client" />
+        </div>
+        <div>
+            <input name="name" type="textbox" placeholder="Campaign Name" />
+        </div>
+        <div>
+            <select name="type">
+                <option value="affiliate">Affiliate</option>
+                <option value="standard">Standard</option>
+            </select>
+        </div>
+        <div>
+            <input name="affiliateLink" type="text" placeholder="Affiliate Link" />
+        </div>
+        <div>
+            <div>Campaign Start</div>
+            <select name="startDay">
+                <option value="">Day</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+                <option value="1">11</option>
+                <option value="1">12</option>
+                <option value="1">13</option>
+                <option value="1">14</option>
+                <option value="1">15</option>
+                <option value="1">16</option>
+                <option value="1">17</option>
+                <option value="1">18</option>
+                <option value="1">19</option>
+                <option value="1">20</option>
+                <option value="1">21</option>
+                <option value="1">22</option>
+                <option value="1">23</option>
+                <option value="1">24</option>
+                <option value="1">25</option>
+                <option value="1">26</option>
+                <option value="1">27</option>
+                <option value="1">28</option>
+                <option value="1">29</option>
+                <option value="1">20</option>
+                <option value="1">31</option>
+            </select>
+            <select name="startMonth">
+                <option value="">Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+            <select name="startYear">
+                <option value="">Year</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>
+        </div>
+        <div>
+            <div>Campaign End</div>
+            <select name="endDay">
+                <option value="">Day</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+                <option value="1">11</option>
+                <option value="1">12</option>
+                <option value="1">13</option>
+                <option value="1">14</option>
+                <option value="1">15</option>
+                <option value="1">16</option>
+                <option value="1">17</option>
+                <option value="1">18</option>
+                <option value="1">19</option>
+                <option value="1">20</option>
+                <option value="1">21</option>
+                <option value="1">22</option>
+                <option value="1">23</option>
+                <option value="1">24</option>
+                <option value="1">25</option>
+                <option value="1">26</option>
+                <option value="1">27</option>
+                <option value="1">28</option>
+                <option value="1">29</option>
+                <option value="1">20</option>
+                <option value="1">31</option>
+            </select>
+            <select name="endMonth">
+                <option value="">Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select>
+            <select name="endYear">
+                <option value="">Year</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>
+        </div>
+        <div>
+            <input name="budget" type="text" placeholder="Campaign Budget" />
+        </div>
+        <div>
+            <div>Campaign Image</div>
+            <div>
+                <input name="image" type="text" />
+                <a href="#" class="btn btn-default">Choose File</a>
+            </div>
+            <div>http://image.link/location</div>
+        </div>
+        <div>Campaign Status</div>
+        <div>
+            <select name="active">
+                <option value="1">Active</option>
+                <option value="0">Inactive</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Create Campaign" class="btn btn-primary">
+        </div>
+    </form>
+</template>

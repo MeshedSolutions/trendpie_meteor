@@ -1,0 +1,24 @@
+<template name="login">
+    <form>
+        <div>
+            <input name="email" type="text" placeholder="Email" />
+        </div>
+        <div>
+            <input name="password" type="password" placeholder="Password">
+        </div>
+        <div>
+            <input type="submit" value="Sign in">
+        </div>
+    </form>
+    <div>
+        <a href="{{pathFor 'forgotPassword'}}" class="btn btn-default">Forgot Password?</a>
+    </div>
+    <div>
+        <div>
+            Don't have an account?
+        </div>
+        <div>
+            <a href="{{pathFor 'register'}}" class="btn btn-default">Create An Account</a>
+        </div>
+    </div>
+</template>

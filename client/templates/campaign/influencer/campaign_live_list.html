@@ -1,0 +1,11 @@
+<template name="campaignLiveList">
+    <div>
+        Live Now
+    </div>
+
+    {{#each campaigns}}
+        {{> campaignLiveItem }}
+    {{/each}}
+
+    <a href="#" class="btn btn-default">View All >></a>
+</template>
