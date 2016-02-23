@@ -1,3 +1,7 @@
 <template name="campaignAdminComplete">
     {{> campaignAdminMenu}}
+
+    {{#each campaigns}}
+        {{> campaignAdminCompleteItem}}
+    {{/each}}
 </template>
