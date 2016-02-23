@@ -1,0 +1,11 @@
+<template name="campaignPending">
+    <div>
+        {{> campaignInfluencerMenu }}
+    </div>
+
+    <div>
+        {{#each campaigns}}
+            {{> campaignPendingItem }}
+        {{/each}}
+    </div>
+</template>

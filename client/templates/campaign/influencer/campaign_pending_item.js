@@ -1,4 +1,4 @@
-Template.campaignLiveItem.helpers({
+Template.campaignPendingItem.helpers({
   /**
    * @return {string}
    */
