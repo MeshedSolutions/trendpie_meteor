@@ -37,9 +37,27 @@ if(Campaigns.find().count() === 0){
     status: 'live'
   });
 
+  var DogsId = Campaigns.insert({
+    client: 'Dog Town',
+    name: 'Dog Town',
+    type: 'standard',
+    affiliateLink: '',
+    startDay: '1',
+    startMonth: '3',
+    startYear: '2016',
+    endDay: '1',
+    endMonth: '3',
+    endYear: '2016',
+    budget: '2000',
+    image: '',
+    active: true,
+    created: now,
+    status: 'live'
+  });
+
 }  var aigId = Campaigns.insert({
   client: 'AIG',
-  name: 'Fuck You Promotion',
+  name: 'Promotion One',
   type: 'affiliate',
   affiliateLink: 'http://www.google.com',
   startDay: '1',

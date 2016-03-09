@@ -1,14 +1,15 @@
 <template name="campaignLiveItem">
-    <div>
+    <div class="campaignName">
         {{name}}
     </div>
-    <div>
-        Start: {{Date startDay startMonth startYear}}
+    <div class="campaignStart">
+        <span class="timeLable">Start:</span> {{Date startDay startMonth startYear}}
     </div>
-    <div>
-        End: {{Date endDay endMonth endYear}}
+    <div class="campaignEnd">
+       <span class="timeLable">End:</span> {{Date endDay endMonth endYear}}
     </div>
-    <div>
-        <input type="text" placeholder="Affiliate Link">
+    <div class="affiliateLinkWrap">
+        <input type="text" class="affiliateLink" placeholder="Affiliate Link">
     </div>
+    <div class="space25"></div>
 </template>
