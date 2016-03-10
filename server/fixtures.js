@@ -19,6 +19,16 @@ if(Campaigns.find().count() === 0){
   });
   var mark = Meteor.users.findOne(markId);
 
+  var markTwitter = SocialMediaAccounts.insert({
+    userID: markId,
+    accountType: 'Twitter',
+    userName: '@BotchedTaco',
+    profileName: 'Mark Brown',
+    numberOfTweets: '365',
+    numberOfFollowing: '99',
+    numberOfFollowers: '600'
+  });
+
   var disneyId = Campaigns.insert({
     client: 'Disney',
     name: 'Toon Town Promotion',
@@ -37,20 +47,21 @@ if(Campaigns.find().count() === 0){
     status: 'live'
   });
 
-}  var aigId = Campaigns.insert({
-  client: 'AIG',
-  name: 'Fuck You Promotion',
-  type: 'affiliate',
-  affiliateLink: 'http://www.google.com',
-  startDay: '1',
-  startMonth: '3',
-  startYear: '2016',
-  endDay: '1',
-  endMonth: '6',
-  endYear: '2016',
-  budget: '5000',
-  image: '',
-  active: true,
-  created: now,
-  status: 'live'
-});
+  var aigId = Campaigns.insert({
+    client: 'AIG',
+    name: 'Fuck You Promotion',
+    type: 'affiliate',
+    affiliateLink: 'http://www.google.com',
+    startDay: '1',
+    startMonth: '3',
+    startYear: '2016',
+    endDay: '1',
+    endMonth: '6',
+    endYear: '2016',
+    budget: '5000',
+    image: '',
+    active: true,
+    created: now,
+    status: 'live'
+  });
+}

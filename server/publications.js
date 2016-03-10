@@ -5,3 +5,7 @@ Meteor.publish('campaigns', function(){
 Meteor.publish('adminUsers', function(){
   return Users.find();
 });
+
+Meteor.publish('socialMediaAccounts', function(){
+  return SocialMediaAccounts.find();
+});
