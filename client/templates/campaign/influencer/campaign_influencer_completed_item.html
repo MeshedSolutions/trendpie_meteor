@@ -1,14 +1,23 @@
 <template name="campaignInfluencerCompletedItem">
-    <div>
-        {{name}}
+
+<div class="campaignCloseItemWrap">
+    <div class="ce_Wrap">
+        <div class="campaignName">
+            {{name}}
+        </div>
+        <div class="campaignEarnings">
+            Earned: $150
+        </div>
     </div>
-    <div>
-        Earned:
+    <div class="campaignEndWrap">
+        <div class="campaignEndDay">
+            {{endDay}}
+        </div>
+        <div class="campaignEndMonth">JUN
+            {{MonthAbbreviation endMonth}}
+        </div>
     </div>
-    <div>
-        {{endDay}}
-    </div>
-    <div>
-        {{MonthAbbreviation endMonth}}
-    </div>
+
+</div>
+
 </template>

@@ -114,15 +114,12 @@ z-index:19;
 {
 width:100px;
 height:25px;
-border: 2px solid #3b99a8;
 margin: 15px 15px 0 5px;
-border-radius:3px;
 cursor:pointer;
 text-align:center;
-font-weight:700;
+font-weight:300;
 font-size:10px;
 text-transform:uppercase;
-background: url('/images/img--close.png') no-repeat  center center;
 padding:7px 5px 0 5px;
 position:absolute;
 z-index:25;
@@ -150,8 +147,8 @@ opacity: 1;
     .menuItems a
     {
     color:#12B9D5;
-    font-size:15px;
-    font-weight:700;
+    font-size:18px;
+    font-weight:300;
     text-decoration:none;
     text-transform:uppercase;
     display:block;
@@ -276,11 +273,67 @@ height:30px;
 background: url('images/icon--arrowBlue.png') no-repeat top center;
 position: relative;
 float: right;
-margin:-5px 10% 0 0;
+margin:-5px 30px 0 0;
 }
 
 /*=========================
 Mobile Navigation Menu
+=========================*/
+
+/*=========================
+Footer
+=========================*/
+
+.footerWrap100
+{
+width:100%;
+height:auto;
+min-height: 150px;
+background: #000;
+color:#FFF;
+border-top:3px solid #12B9D5;
+padding:30px 0 0 0;
+}
+
+.footerContentRow
+{
+width:100%;
+height:40px;
+margin:10px 0 10px 0;
+color:#12B9D5;
+}
+
+.iconPhone
+{
+width:50px;
+height:40px;
+background: red;
+position: relative;
+float: left;
+background: url('images/icon--phone.png') no-repeat top center;
+}
+
+.iconMail
+{
+width:50px;
+height:40px;
+background: red;
+position: relative;
+float: left;
+background: url('images/icon--mail.png') no-repeat top center;
+}
+
+.legalese
+{
+position: relative;
+color:#dadada;
+margin:15px 0 0px 10px;
+padding:0 0 10px 0;
+font-size: 10px;
+}
+
+/*=========================
+End Footer
 =========================*/
 
 /*=========================
@@ -352,11 +405,36 @@ padding:20px 0 0 0;
 margin:0 0 0px 0;
 }
 
+.db_tabWrap2
+{
+width:50%;
+height:40px;
+background:#323A45;
+border-radius: 0 3px 0 0;
+float: left;
+color:#FFF;
+font-size: 18px;
+font-weight: 400;
+text-align: center;
+text-transform: uppercase;
+padding:20px 0 0 0;
+margin:0 0 0px 0;
+}
+
 .db_liveWrap
 {
 width: 100%;
 height: auto;
 padding: 10px 0 20px 0;
+background: #12B9D5;
+position: relative;
+}
+
+.db_blueWrap
+{
+width: 100%;
+height: auto;
+padding: 0px 0 0px 0;
 background: #12B9D5;
 position: relative;
 }
@@ -377,6 +455,13 @@ position: relative;
 margin:20px 0 0 10px;
 position: relative;
 }
+
+.db_completeContentWrap
+{
+margin:20px 0 0 20px;
+position: relative;
+}
+
 
 /*=========================
 End Dashboard
@@ -424,6 +509,135 @@ border:none;
 font-size: 10px;
 padding:0 0 0 5px;
 }
+
+.campaignCloseItemWrap
+{
+width:95%;
+height:50px;
+margin:15px 0 15px 0;
+border-bottom: 1px solid #939598;
+}
+
+.ce_Wrap
+{
+width:auto;
+max-width:75%;
+float:left;
+}
+.campaignEarnings
+{
+color:#efefef;
+text-transform: uppercase;
+font-weight: 300;
+}
+
+.campaignEndWrap
+{
+width:60px;
+height:auto;
+float:right;
+margin:0 5px 0 0;
+}
+
+.campaignEndDay
+{
+color:#FFF;
+width:60px;
+height:25px;
+line-height: 25px;
+text-align: center;
+font-size: 28px;
+font-weight: 400;
+}
+
+.campaignEndMonth
+{
+color:#FFF;
+width:60px;
+height:13px;
+line-height: 13px;
+text-align: center;
+font-size: 13px;
+text-transform: uppercase;
+font-weight: 300;
+}
+
 /*=========================
 Campaign Elements
+=========================*/
+
+
+/*=========================
+Buttons
+=========================*/
+
+.bttnViewAllWrap
+{
+max-width:250px;
+height:auto;
+position: relative;
+float: right;
+color:#FFF;
+margin:0 25px 0 0;
+}
+
+.bttnViewAllWrap a
+{
+color:#FFF;
+text-decoration: none;
+}
+
+.bttnViewAllBlu
+{
+width:125px;
+height:45px;
+text-align:center;
+position: relative;
+z-index: 999;
+background:#12B9D5;
+border: 1px solid #FFF;
+border-radius:2px;
+padding:15px 0 0 0;
+}
+
+.bttnViewAllBlu a
+{
+color:#FFF;
+font-weight:400;
+text-decoration:none;
+display:block;
+padding:15px 15px 5px 15px;
+text-decoration: none;
+background:#12B9D5;
+border: 1px solid #6b6768;
+border-radius:3px;
+}
+
+.bttnViewAllBlu:hover a
+{
+color:#FFF;
+background: #000;
+transition:all 0.3s ease-in 0s;
+transition:all 0.3s ease-out 0s;
+-webkit-transition:all 0.3s ease-in 0s;
+-webkit-transition:all 0.3s ease-out 0s;
+border: 1px solid #FFF;
+border-radius:3px;
+}
+
+.bttnViewAllArrow
+{
+background: url('images/icon--arrowWhite.png') no-repeat top center;
+width:13px;
+height:30px;
+float: right;
+margin: -8px 10px 0 0;
+}
+
+
+
+
+
+/*=========================
+End Buttons
 =========================*/
