@@ -1,11 +1,25 @@
 <template name="campaignLiveList">
-    <div>
+
+
+    <div class="db_tabWrap1">
         Live Now
     </div>
 
-    {{#each campaigns}}
-        {{> campaignLiveItem }}
-    {{/each}}
+    <div class="clearme"></div>
+    <div class="db_liveWrap">
+		<div class="db_liveWrapInner">
+			<div class="clearme"></div>
+			<div class="db_liveContentWrap">
+			    {{#each campaigns}}
+			        {{> campaignLiveItem }}
+			    {{/each}}
+			    <div class="clearme"></div>
+	    	</div>
+		</div>
+	</div>
 
     <a href="#" class="btn btn-default">View All >></a>
+
+
+
 </template>

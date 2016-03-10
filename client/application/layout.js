@@ -11,7 +11,7 @@ Template.layout.onRendered(function () {
 });
 
 Template.layout.events({
-  'click .menuItems': function(e) {
+  'click .menuItems a': function(e) {
     e.preventDefault();
 
     $(".SlideM .MenuLinks").eq(0).hide();
