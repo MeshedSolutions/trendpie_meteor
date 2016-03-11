@@ -3,7 +3,7 @@ Meteor.publish('campaigns', function(){
 });
 
 Meteor.publish('adminUsers', function(){
-  return Users.find();
+  return Meteor.users.find({}, {fields: {profile:1}});
 });
 
 Meteor.publish('socialMediaAccounts', function(){

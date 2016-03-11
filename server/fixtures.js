@@ -14,7 +14,8 @@ if(Campaigns.find().count() === 0){
       state: 'Florida',
       zip: '32073',
       gender: 'Male',
-      preferredContact: 'Email'
+      preferredContact: 'Email',
+      amountPerCampaign: '10'
     }
   });
   var mark = Meteor.users.findOne(markId);

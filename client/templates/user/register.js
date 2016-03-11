@@ -17,8 +17,9 @@ Template.register.events ({
       state: $(e.target).find('[name=state]').val(),
       zip: $(e.target).find('[name=zip]').val(),
       gender: $(e.target).find('[name=gender]').val(),
-      preferredContact: $(e.target).find('[name=preferredContact]').val()
-    }
+      preferredContact: $(e.target).find('[name=preferredContact]').val(),
+      amountPerCampaign: '0'
+    };
 
     if(password != confirmPassword){
       // Handle error

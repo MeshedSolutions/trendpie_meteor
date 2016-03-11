@@ -1,0 +1,11 @@
+<template name="payoutReport">
+    <div>
+        <input name="selectAll" type="checkbox" />SELECT ALL
+        <input type="button" value="EXPORT">
+    </div>
+    <div>
+        {{#each campaigns}}
+            {{> payoutReportItem}}
+        {{/each}}
+    </div>
+</template>
