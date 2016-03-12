@@ -3,9 +3,13 @@
         {{> campaignInfluencerMenu }}
     </div>
 
-    <div>
+    <div class="grayBack">
+		<div class="campaignContentWrap">
         {{#each campaigns}}
             {{> campaignPendingItem }}
         {{/each}}
+    	</div>
+    	<div class="clearme"></div>
+    	<div class="space25"></div>
     </div>
 </template>

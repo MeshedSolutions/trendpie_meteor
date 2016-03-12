@@ -1,15 +1,20 @@
 <template name="campaignPendingItem">
-    <div>
-        {{name}}
+    <div class="campaignOpenItemWrap">
+        <div class="campaignName">
+            {{name}}
+        </div>
+        <div class="campaignStart">
+            <span class="timeLable">Starts:</span> {{Date startDay startMonth startYear}}
+        </div>
+        <div class="campaignEnd">
+            <span class="timeLable2">ENDING:</span> {{Date endDay endMonth endYear}}
+        </div>
+        <div class="optWrapper">
+            <a href="#"><div class="declineCampaign"></div></a>
+            <a href="#"><div class="acceptCampaign"></div></a>
+        </div>
+        <div class="clearme"></div>
+        <div class="space20"></div>
     </div>
-    <div>
-        Start: {{Date startDay startMonth startYear}}
-    </div>
-    <div>
-        End: {{Date endDay endMonth endYear}}
-    </div>
-    <div>
-        <a href="#">No</a>
-        <a href="#">Yes</a>
-    </div>
+    <div class="clearme"></div>
 </template>

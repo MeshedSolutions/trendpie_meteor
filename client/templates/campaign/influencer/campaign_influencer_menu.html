@@ -1,7 +1,10 @@
 <template name="campaignInfluencerMenu">
-    <div>
-        <a href="{{pathFor 'campaignPending'}}" class="btn btn-default">PENDING</a>
-        <a href="{{pathFor 'campaignLive'}}" class="btn btn-default">LIVE NOW</a>
-        <a href="{{pathFor 'campaignInfluencerComplete'}}" class="btn btn-default">COMPLETE</a>
+	<div class="blueNavBumper"></div>
+    <div class="SecNavWrapper">
+	    <ul>
+	    	<li><a href="{{pathFor 'campaignPending'}}">PENDING</a></li>
+	    	<li><a href="{{pathFor 'campaignLive'}}">LIVE NOW</a></li>
+	        <li><a href="{{pathFor 'campaignInfluencerComplete'}}">COMPLETE</a></li>
+	    </ul>
     </div>
 </template>

@@ -1,31 +1,17 @@
 <template name="campaignLiveList">
-
-
-    <div class="db_tabWrap1">
-        Live Now
-    </div>
-
     <div class="clearme"></div>
-    <div class="db_liveWrap">
-		<div class="db_liveWrapInner">
-			<div class="clearme"></div>
-			<div class="db_liveContentWrap">
-			    {{#each campaigns}}
-			        {{> campaignLiveItem }}
-			    {{/each}}
-			    <div class="clearme"></div>
+    {{#each campaigns}}
+        {{> campaignLiveItem }}
+    {{/each}}
+    <div class="clearme"></div>
+	<div class="clearme"></div>	    
+	<a href="#">
+    	<div class="bttnViewAllWrap">
+	    	<div class="bttnViewAllBlu">VIEW All
+	    		<div class="bttnViewAllArrow"></div>
 	    	</div>
-
-		    <a href="#">
-		    	<div class="bttnViewAllWrap">
-			    	<div class="bttnViewAllBlu">VIEW All
-			    		<div class="bttnViewAllArrow"></div>
-			    	</div>
-		    	</div>
-		    </a>
-	    	<div class="clearme"></div>
-		</div>
-	</div>
-
-
+    	</div>
+    </a>
+    <div class="clearme"></div>
+    <div class="Space25"></div>
 </template>

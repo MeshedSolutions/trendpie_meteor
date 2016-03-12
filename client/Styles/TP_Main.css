@@ -5,12 +5,17 @@ body
 {
 font-family: 'Raleway', sans-serif;
 color: #58595B;
-background:#323A45;
+background:#272E35;
 font-size: 13px;
 font-weight: 400;
 margin:0;
 line-height:18px;
 }
+
+
+.grayBack {background:#272E35;}
+.gradient30 {background: url('/images/bgimg--gradient30.png');}
+
 
 .parentWrapper
 {
@@ -32,7 +37,66 @@ position: absolute;
 {
 width:100%;
 height:75px;
+position: absolute;
+z-index: 100;
 }
+
+.blueNavBumper
+{
+width:100%;
+height:15px;
+background:#12B9D5;
+}
+
+.SecNavWrapper
+{
+width:100%;
+height:50px;
+background:#000;
+}
+
+.SecNavWrapper ul
+{
+list-style-type: none;
+margin: 0;
+padding:0px;
+background-color: #000;
+}
+
+.SecNavWrapper li
+{
+width:33%;
+float: left;
+text-align: center;
+}
+
+.SecNavWrapper li a
+{
+display: block;
+color:#FFF;
+padding:20px 0 12px 0px;
+text-decoration: none;
+}
+
+.SecNavWrapper li a:active
+{
+background:#12B9D5 !important;
+color:#FFF;
+}
+
+.SecNavWrapper li a:hover:not(.active) {
+background-color: #12B9D5;
+color: white;
+}
+
+
+
+
+    .SecNavItem3 a {color:#FFF; display: block; text-decoration: none;}
+    .SecNavItem3 a.active {background: #12B9D5;}
+    .SecNavItem3 a:hover {background: #12B9D5;}
+
+    .thirtyfour {width:34%;}
 
 .contentWrapper
 {
@@ -82,7 +146,6 @@ img {border:none !important;}
 End CB Standard Style
 ====================================*/
 
-
 /*=========================
 Mobile Navigation Menu
 =========================*/
@@ -129,7 +192,7 @@ z-index:25;
 {
 background:#000;
 width:100%;
-/*margin:-52px 0 0 0;*/
+margin:15px 0 0 0;
 padding:0 0 0 0;
 position:relative;
 z-index:22;
@@ -386,8 +449,19 @@ min-height:100px;
     .db_chartWrap img
     {
     width:95%;
+
     height:auto;
+
     }
+
+.chartContent
+{
+width:auto;
+max-width: 500px;
+height:auto;
+padding:10px;
+margin: 0 auto;
+}
 
 .db_tabWrap1
 {
@@ -402,14 +476,14 @@ font-weight: 400;
 text-align: center;
 text-transform: uppercase;
 padding:20px 0 0 0;
-margin:0 0 0px 0;
+margin:0 0 -2px 0;
 }
 
 .db_tabWrap2
 {
 width:50%;
 height:40px;
-background:#323A45;
+background:#272E35;
 border-radius: 0 3px 0 0;
 float: left;
 color:#FFF;
@@ -417,8 +491,10 @@ font-size: 18px;
 font-weight: 400;
 text-align: center;
 text-transform: uppercase;
-padding:20px 0 0 0;
-margin:0 0 0px 0;
+padding:15px 0 0 0;
+margin:0 0 -2px 0;
+position: relative;
+z-index: 10;
 }
 
 .db_liveWrap
@@ -445,7 +521,7 @@ width:95%;
 height:auto;
 margin:0 auto;
 margin-top:0px;
-background:#323A45;
+background:#272E35;
 padding:10px 0 30px 0;
 position: relative;
 }
@@ -458,10 +534,10 @@ position: relative;
 
 .db_completeContentWrap
 {
-margin:20px 0 0 20px;
+margin:0px 0 0 20px;
+padding:20px 0 0 0;
 position: relative;
 }
-
 
 /*=========================
 End Dashboard
@@ -471,49 +547,86 @@ End Dashboard
 Campaign Elements
 =========================*/
 
+.campaignContentWrap
+{
+padding:20px 0 0 20px;
+position: relative;
+}
+
+.campaignOpenItemWrap
+{
+width:95%;
+height:auto;
+margin:20px 0 15px 0;
+border-bottom: 1px solid #939598;
+}
+
 .campaignName
 {
 color:#12B9D5;
 font-size: 18px;
 font-weight: 400;
 text-transform: uppercase;
+min-width:230px;
 }
 
 .campaignStart
 {
 color:#efefef;
+font-weight: 300;
+height: 15px;
+
 }
 
 .campaignEnd
 {
 color:#efefef;
+font-weight: 300;
+height: 15px;
+line-height: 15px;
 }
 
 .timeLable
 {
-color:#dadada;
-font-size: 8px;
+color:#959596;
+font-weight: 900;
+font-size:10px;
 text-transform: uppercase;
+margin:0 10px 0 0;
 }
+
+.timeLable2
+{
+color:#959596;
+font-weight: 900;
+font-size:10px;
+text-transform: uppercase;
+margin:0 10px 0 0;
+}
+
 .affiliateLinkWrap
 {
-
+height:13px;
 }
 
 .affiliateLink
 {
-background: #000;
+background: #1D2225;
 color:#dadada;
-width:95%;
+width:100%;
+height:16px;
+line-height: 14px;
 border:none;
+border-radius: 0 5px 0 0;
 font-size: 10px;
 padding:0 0 0 5px;
+margin:0 0 0 -2px;
 }
 
 .campaignCloseItemWrap
 {
 width:95%;
-height:50px;
+height:auto;
 margin:15px 0 15px 0;
 border-bottom: 1px solid #939598;
 }
@@ -529,6 +642,7 @@ float:left;
 color:#efefef;
 text-transform: uppercase;
 font-weight: 300;
+font-size: 13px;
 }
 
 .campaignEndWrap
@@ -561,6 +675,32 @@ font-size: 13px;
 text-transform: uppercase;
 font-weight: 300;
 }
+
+.optWrapper
+{
+width:82px;
+height:auto;
+float:right;
+margin:-30px 5px 0 0;
+}
+
+.acceptCampaign
+{
+width:36px;
+height:38px;
+background: url('images/icon--accept.png') no-repeat top center; 
+float: left;
+}
+.declineCampaign
+{
+width:36px;
+height:38px;
+background: url('images/icon--decline.png') no-repeat top center;
+float:left;
+margin:0 10px 0 0;
+}
+
+
 
 /*=========================
 Campaign Elements

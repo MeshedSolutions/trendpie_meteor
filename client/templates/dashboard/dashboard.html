@@ -1,17 +1,37 @@
 <template name="dashboard">
-    <div>
-        {{> earningsSummary}}
-    </div>
-    <div class="clearme"></div>
-    <div class="db_chartWrap">
-		<img src="../images/img--chart.hpg" width="319" height="231" />
-	</div>
-	<div class="clearme"></div>
-    <div>
-        {{> campaignLiveList}}
-    </div>
-    <div class="clearme"></div>
-    <div>
-        {{> campaignInfluencerCompleteList }}
+    <div class="gradient30">
+        <div>
+            {{> earningsSummary}}
+        </div>
+        <div class="clearme"></div>
+        <div class="db_chartWrap">
+            <div class="chartContent">
+                <img src="/images/img--chart.jpg" width="319" height="231" />
+            </div>
+    	</div>
+        <div class="db_tabWrap1">
+            Live Now
+        </div>
+        <div class="clearme"></div> 
+        <div class="db_liveWrap">
+            <div class="db_liveWrapInner">
+                <div class="db_liveContentWrap">
+                    {{> campaignLiveList}}
+                </div>
+            </div>
+        </div>
+        <div class="clearme"></div>
+        <div class="db_blueWrap">
+            <div class="db_tabWrap2">
+                Completed
+            </div>
+            <div class="clearme"></div>
+        </div>
+        <div class="clearme"></div>
+        <div class="grayBack">
+            <div class="campaignContentWrap">
+                {{> campaignInfluencerCompleteList }}
+            </div>
+        </div>
     </div>
 </template>

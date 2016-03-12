@@ -67,7 +67,7 @@ if(Campaigns.find().count() === 0){
 
 }  var aigId = Campaigns.insert({
   client: 'AIG',
-  name: 'Promotion One',
+  name: 'Promotion One, Two, Three, Four and More',
   type: 'affiliate',
   affiliateLink: 'http://www.google.com',
   startDay: '3',
