@@ -1,0 +1,19 @@
+<template name="payoutReportItem">
+    <div>
+        <div>
+            <input type="checkbox" name="selectCampaign"/>{{ name }}
+        </div>
+        <div>
+            {{#each influencers}}
+                <div>
+                    <div>
+                        {{ profile.firstName }} {{ profile.lastName }}
+                    </div>
+                    <div>
+                        ${{ profile.amountPerCampaign }}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</template>

@@ -1,7 +1,24 @@
 <template name="dashboard">
     <div class="gradient30">
-        <div>
-            {{> earningsSummary}}
+        <div class="db_earnWrapper">
+            <div class="db_earnAmount thirtyfour">$14,250
+                {{allTime}}
+                <div class="earnLabel">
+                    earned all time
+                </div>
+            </div>
+            <div class="db_earnAmount">$645
+                {{past30days}}
+                <div class="earnLabel">
+                    past 30 days
+                </div>
+            </div>
+            <div class="db_earnAmount">$120
+                {{past7days}}
+                <div class="earnLabel">
+                    past 7 days
+                </div>
+            </div>
         </div>
         <div class="clearme"></div>
         <div class="db_chartWrap">
@@ -33,5 +50,4 @@
                 {{> campaignInfluencerCompleteList }}
             </div>
         </div>
-    </div>
 </template>
