@@ -12,6 +12,15 @@ margin:0;
 line-height:18px;
 }
 
+h1
+{
+font-size: 22px;
+font-weight: 600;
+color:#12B9D5;
+text-transform: uppercase;
+margin:5px 0 5px 0;
+}
+
 .grayBack {background:#272E35;}
 .whiteBack {background:#FFF;}
 .gradient30 {background: url('/images/bgimg--gradient30.png');}
@@ -29,7 +38,7 @@ width:100%;
 background: url('/images/bgimg--mMain.jpg') no-repeat top left;
 background-size: cover;
 margin:0;
-position: absolute;
+position: relative;
 }
 
 .topWrapper100
@@ -87,14 +96,9 @@ color:#FFF;
 background-color: #12B9D5;
 color: white;
 }
-
-
-
-
     .SecNavItem3 a {color:#FFF; display: block; text-decoration: none;}
     .SecNavItem3 a.active {background: #12B9D5;}
     .SecNavItem3 a:hover {background: #12B9D5;}
-
     .thirtyfour {width:34%;}
 
 .contentWrapper
@@ -455,11 +459,16 @@ min-height:100px;
 
 .chartContent
 {
-width:auto;
+width:95%;
 max-width: 500px;
 height:auto;
-padding:10px;
+min-height:150px;
+padding:10px 0 10px 0;
 margin: 0 auto;
+margin-top:10px;
+margin-bottom:10px;
+background: #FFF;
+opacity: .3;
 }
 
 .db_tabWrap1
@@ -798,6 +807,17 @@ padding:0 0 0 15px;
 margin:0 auto;
 }
 
+.ddlInput
+{
+font-family: 'Raleway', sans-serif;
+width:97%;
+height:45px;
+border:none;
+padding:0 0 0 10px;
+margin:0 0 0 -0px;
+color: #58595B;
+}
+
 .fieldSeperator
 {
 width:90%;
@@ -846,7 +866,8 @@ display: block;
 {
 width:100%;
 min-height:112px;
-background: url('/images/bgimg--vertacctgradient.png') bottom center;
+background: url('/images/bgimg--vertacctgradient.png') bottom center !important;
+background: transparent;
 margin:20px 0 0 0;
 }
 
@@ -865,6 +886,7 @@ width:100%;
 height:40px;
 color:FFF;
 text-align: center;
+padding:10px 0 0 0;
 }
 
 .bttnCreateAccount a
@@ -874,7 +896,49 @@ padding: 10px 0 10px 0;
 text-decoration: none;
 }
 
+.checkboxWrapper
+{
+width:90%;
+height:55px;
+margin:0 Auto;
+margin-top:5px; 
+}
 
+.lblRequired
+{
+position: relative;
+color:#dadada;
+margin:15px 0 0px 10px;
+padding:0 0 0px 0;
+font-size: 11px;
+float: right;
+}
+
+.bttnRegister
+{
+width:100%;
+height:40px;
+border:none;
+margin:0 auto;
+background:transparent ;
+margin:10px 0 0px 0;
+border: 2px solid #12B9D5;
+border-radius: 1px;
+color:#12B9D5;
+font-size: 13px;
+font-weight: 600;
+text-transform:;
+}
+
+.bttnArrow
+{
+width:13px;
+height:30px;
+background: url('images/icon--arrowBlue.png') no-repeat top center;
+position: relative;
+float: right;
+margin:-32px 10px 0 0;
+}
 
 /*==========================
 END FORM ELEMENTS
