@@ -1,24 +1,37 @@
 <template name="login">
     <form>
-        <div>
-            <input name="email" type="text" placeholder="Email" />
+        <div class="formwrapper whiteBack">
+            <div>
+                <input name="email" type="text" placeholder="Email" class="txtInput" />
+            </div>
+            <div class="fieldSeperator"></div>
+            <div>
+                <input name="password" type="password" placeholder="Password" class="txtInput">
+            </div>
         </div>
-        <div>
-            <input name="password" type="password" placeholder="Password">
+        <div class="formwrapper">
+            <div>
+                <input type="submit" value="Sign in" class="bttnSignIn">
+            </div>
         </div>
-        <div>
-            <input type="submit" value="Sign in">
-        </div>
+
+
+
     </form>
-    <div>
-        <a href="{{pathFor 'forgotPassword'}}" class="btn btn-default">Forgot Password?</a>
-    </div>
-    <div>
-        <div>
-            Don't have an account?
+
+    <div class="formwrapper">
+        <div class="bttnPassword">
+            <a href="{{pathFor 'forgotPassword'}}">Forgot Password?</a>
         </div>
-        <div>
-            <a href="{{pathFor 'register'}}" class="btn btn-default">Create An Account</a>
+    </div>
+    <div class="bg_createacct">
+        <div class="formwrapper">
+            <div class="Qcreateaccount">
+                Don't have an account?
+            </div>
+            <div class="bttnCreateAccount">
+                <a href="{{pathFor 'register'}}">Create An Account</a>
+            </div>
         </div>
     </div>
 </template>
