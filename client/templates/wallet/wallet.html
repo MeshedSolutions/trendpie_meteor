@@ -1,21 +1,45 @@
 <template name="wallet">
+    <div>
+        {{> profileMenu}}
+    </div>
+
+<div class="gradient30">
     <form>
-        <div>PayPal Email</div>
-        <div><input name="payPalEmail" type="email" value="{{payPalEmail}}"></div>
-        <div>Amount / Campaign</div>
-        <div><input name="amountPerCampaign" type="number" value="{{amountPerCampaign}}"></div>
-        <div><input type="submit" value="Save"></div>
-    </form>
-    <form>
-        <div>Change Subscription</div>
-        <div>Lorem ipsum</div>
-        <div>
-            <select name="subscriptionLevel">
-                <option value="Standard">Standard</option>
-                <option value="Gold">Gold</option>
-                <option value="Platinum">Platinum</option>
-            </select>
+        <div class="space25"></div>
+        <div class="formwrapper whiteBack">
+            <div class="walletLabel">PayPal Email</div>
+            <div><input name="payPalEmail" type="email" value="{{payPalEmail}}" class="txtInput"></div>
+            <div class="walletLabel">Amount / Campaign</div>
+            <div><input name="amountPerCampaign" type="number" value="{{amountPerCampaign}}" class="txtInput"></div>
+        </div>    
+        <div class="clearme"></div>
+        <div class="space10"></div>
+        <div class="formwrapper">
+            <div><input type="submit" value="Save" class="bttnAddSocial"></div>
         </div>
-        <div><input type="submit" value="Save"></div>
     </form>
+
+    <div class="clearme"></div>
+    <div class="space25"></div>
+
+    <form>
+        <div class="formwrapper whiteBack">
+        <div class="walletLabel">Change Subscription</div>
+            <div>
+                <select name="subscriptionLevel" class="ddlInput">
+                    <option value="Standard">Standard</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+                </select>
+            </div>
+        </div>
+        <div class="clearme"></div>
+        <div class="space10"></div>
+        <div class="formwrapper">
+            <div><input type="submit" value="Save" class="bttnAddSocial"></div>
+        </div>
+    </form>
+    <div class="clearme"></div>
+    <div class="space50"></div>
+</div>
 </template>

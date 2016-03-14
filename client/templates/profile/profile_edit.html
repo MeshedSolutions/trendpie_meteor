@@ -1,60 +1,80 @@
 <template name="profileEdit">
-    <div>
-        <input name="firstName" type="text" placeholder="First Name*" />
-    </div>
-    <div>
-        <input name="lastName" type="text" placeholder="Last Name*" />
-    </div>
-    <div>
-        <input name="dob" type="date" placeholder="DOB*" />
-    </div>
-    <div>
-        <input name="email" type="email" placeholder="Email*" />
-    </div>
-    <div>
-        <input name="address1" type="text" placeholder="Address*" />
-    </div>
-    <div>
-        <input name="address2" type="text" placeholder="Address 2" />
-    </div>
-    <div>
-        <input name="country" type="text" placeholder="Country*" />
-    </div>
-    <div>
-        <input name="state" type="text" placeholder="State*" />
-    </div>
-    <div>
-        <input name="zip" type="text" placeholder="Zip*" />
-    </div>
-    <div>
-        <div>
-            Gender*
-        </div>
-        <div>
-            <select name="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
+
+    <div class="formwrapper">
+        <h1>EDIT PROFILE</h1>
+        <div class="lblRequired">
+            *indicates required
         </div>
     </div>
-    <div>
-        <input name="password" type="password" placeholder="Password*" />
-    </div>
-    <div>
-        <input name="confirmPassword" type="password" placeholder="Confirm Password*" />
-    </div>
-    <div>
+    <div class="clearme"></div>
+    <div class="formwrapper whiteBack">
         <div>
-            Preferred Contact*
+            <input name="firstName" type="text" placeholder="First Name*" class="txtInput" />
         </div>
+        <div class="fieldSeperator"></div>
         <div>
-            <select name="preferredContact">
-                <option value="email">Email</option>
-                <option value="text">Text</option>
-            </select>
+            <input name="lastName" type="text" placeholder="Last Name*" class="txtInput" />
         </div>
-    </div>
-    <div>
-        <input type="checkbox" value="agree">Yes, I have read and agree to the terms and conditions and privacy policy
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="dob" type="date" placeholder="DOB*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="email" type="email" placeholder="Email*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="address1" type="text" placeholder="Address*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="address2" type="text" placeholder="Address 2" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="country" type="text" placeholder="Country*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="state" type="text" placeholder="State*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="zip" type="text" placeholder="Zip*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <div>
+                <select class="ddlInput">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="password" type="password" placeholder="Password*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <input name="confirmPassword" type="password" placeholder="Confirm Password*" class="txtInput" />
+        </div>
+        <div class="fieldSeperator"></div>
+        <div>
+            <div>
+                <select class="ddlInput">
+                    <option value="email">Preferred Contact*</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                </select>
+            </div>
+        </div>
+        <div class="fieldSeperator"></div>
+        <div class="checkboxWrapper">
+            <input type="checkbox" value="agree">Yes, I have read and agree to the terms and conditions and privacy policy
+        </div>
+
     </div>
 </template>

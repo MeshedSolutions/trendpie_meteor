@@ -1,38 +1,49 @@
 <template name="socialItem">
-    <div class="socialMediaTypeIcon">
-        <img src="" />
+    <div class="socialHeadWrap">
+        <div class="formwrapper">
+            <div class="iconTwitter"></div>
+            <div class="clearme"></div>
+            <div class="space25"></div>
+            <div class="socialMediaAvatar">
+                <img src=""/>
+            </div>
+        </div>
+        <div class="socialUserWrap">
+            <div>
+                {{ userName }}
+            </div>
+            <div>
+                {{ profileName }}
+            </div>
+        </div>
     </div>
-    <div class="socialMediaAvatar">
-        <img src=""/>
-    </div>
-    <div>
-        {{ userName }}
-    </div>
-    <div>
-        {{ profileName }}
-    </div>
-    <div>
-        <div>
+    <div class="socialStatWrap">
+        <div class="socialStat thirtyfour">
             {{ numberOfTweets}}
+            <div class="socialStatLabel">
+                TWEET
+            </div>
         </div>
-        <div>
-            TWEET
-        </div>
-    </div>
-    <div>
-        <div>
+        <div class="socialStat">
             {{ numberOfFollowing}}
+            <div class="socialStatLabel">
+                FOLLOWING
+            </div>
         </div>
-        <div>
-            FOLLOWING
+        <div class="socialStat">
+            {{ numberOfFollowers}}
+            <div class="socialStatLabel">
+                FOLLOWERS
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-            {{ numberOfFollowers}}
-        </div>
-        <div>
-            FOLLOWERS
+    <div class="socialBodyWrap gradient30">
+        <div class="formwrapper">   
+            <div class="bttnAddSocial">
+                <a href="#">Add Account
+                    <div class="iconPlus"></div>
+                </a>
+            </div>
         </div>
     </div>
 </template>
