@@ -773,6 +773,39 @@ float:left;
 margin:0 10px 0 0;
 }
 
+.editCampaign
+{
+width:41px;
+height:38px;
+background: url('images/icon--edit.png') no-repeat top center;
+float:left;
+margin:0 10px 0 0;
+}
+
+.editWrapper
+{
+width:41px;
+height:auto;
+float:right;
+margin:-30px 5px 0 0;
+}
+
+.beginEndWrap
+{
+width:100%;
+height:25px;
+}
+
+.admin_campaignTiming
+{
+width:45%;
+height:auto;
+float:left;
+color:#efefef;
+font-size: 13px;
+
+}
+
 /*=========================
 Campaign Elements
 =========================*/

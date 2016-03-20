@@ -1,7 +1,16 @@
 <template name="campaignAdminCurrent">
-    {{> campaignAdminMenu }}
+	    {{> campaignAdminMenu }}
+	<div class="grayBack">
+		<div class="campaignContentWrap">
+	    {{#each campaigns}}
+	    	{{> campaignAdminCurrentItem}}
+	    {{/each}}
+    	</div>
+    	<div class="clearme"></div>
+    	<div class="space25"></div>
+	</div>
 
-    {{#each campaigns}}
-    	{{> campaignAdminCurrentItem}}
-    {{/each}}
 </template>
+
+
+
