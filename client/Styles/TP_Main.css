@@ -1073,6 +1073,17 @@ padding:0 0 0 15px;
 margin:0 auto;
 }
 
+.txtInputSM
+{
+width:65%;
+height:45px;
+border:none;
+padding:0 0 0 0px;
+margin:0 0 0 -5px;
+background: #efefef;
+border-radius:3px;
+}
+
 .ddlInput
 {
 font-family: 'Raleway', sans-serif;
@@ -1080,8 +1091,23 @@ width:97%;
 height:45px;
 border:none;
 padding:0 0 0 10px;
+margin:0 0 0 0px;
+color: #58595B;
+}
+
+.ddlInput3
+{
+font-family: 'Raleway', sans-serif;
+width:29%;
+height:45px;
+border:none;
+padding:0 0 0 10px;
 margin:0 0 0 -0px;
 color: #58595B;
+float:left;
+background: #efefef;
+border-radius: 3px;
+margin:0 0 0 10px;
 }
 
 .fieldSeperator
@@ -1116,6 +1142,15 @@ margin:0 Auto;
 margin-top:5px; 
 }
 
+.lblWrapper
+{
+width:95%;
+height:10px;
+margin:0 Auto;
+margin:5px 0 5px 10px; 
+font-weight: 700;
+}
+
 .lblRequired
 {
 position: relative;
@@ -1124,6 +1159,26 @@ margin:15px 0 0px 10px;
 padding:0 0 0px 0;
 font-size: 11px;
 float: right;
+}
+
+.bttnFileUpload
+{
+width:120px;
+height:40px;
+border:1px solid #efefef;
+border-radius: 3px;
+background:#12B9D5;
+padding:15px 15px 15px 15px;
+color:#FFF;
+}
+
+.bttnFileUpload a {color:#FFF; text-decoration: none;} 
+
+.genericWrapper
+{
+width:100%;
+height:55px;
+margin:0 0 0 15px;
 }
 
 /*==========================

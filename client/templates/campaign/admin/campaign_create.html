@@ -1,25 +1,37 @@
 <template name="campaignCreate">
+    <div class="formwrapper">
+        <h1>CREATE CAMPAIGN</h1>
+    </div>
     {{> campaignAdminMenu }}
 
+    <div class="clearme"></div>
+    <div class="space10"></div>
     <form>
+    <div class="formwrapper whiteBack">
         <div>
-            <input name="client" type="text" placeholder="Client" />
+            <input name="client" type="text" placeholder="Client" class="txtInput" />
         </div>
+        <div class="fieldSeperator"></div>
         <div>
-            <input name="name" type="text" placeholder="Campaign Name" />
+            <input name="name" type="text" placeholder="Campaign Name" class="txtInput" />
         </div>
+        <div class="fieldSeperator"></div>
         <div>
-            <select name="type">
+            <select name="type"  class="ddlInput">
                 <option value="affiliate">Affiliate</option>
                 <option value="standard">Standard</option>
             </select>
         </div>
+        <div class="fieldSeperator"></div>
         <div>
-            <input name="affiliateLink" type="text" placeholder="Affiliate Link" />
+            <input name="affiliateLink" type="text" placeholder="Affiliate Link" class="txtInput" />
         </div>
+        <div class="fieldSeperator"></div>
+        <div class="lblWrapper">Campaign Start</div>
+        <div class="clearme"></div>
         <div>
-            <div>Campaign Start</div>
-            <select name="startDay">
+
+            <select name="startDay" class="ddlInput3">
                 <option value="">Day</option>
                 <option value="1">1</option>
                 <option value="1">2</option>
@@ -53,7 +65,7 @@
                 <option value="1">20</option>
                 <option value="1">31</option>
             </select>
-            <select name="startMonth">
+            <select name="startMonth" class="ddlInput3">
                 <option value="">Month</option>
                 <option value="1">Jan</option>
                 <option value="2">Feb</option>
@@ -68,7 +80,7 @@
                 <option value="11">Nov</option>
                 <option value="12">Dec</option>
             </select>
-            <select name="startYear">
+            <select name="startYear" class="ddlInput3">
                 <option value="">Year</option>
                 <option value="2016">2016</option>
                 <option value="2017">2017</option>
@@ -77,9 +89,12 @@
                 <option value="2020">2020</option>
             </select>
         </div>
+        <div class="clearme"></div>
+        <div class="space15"></div>
+        <div class="lblWrapper">Campaign End</div>
+        <div class="clearme"></div>
         <div>
-            <div>Campaign End</div>
-            <select name="endDay">
+            <select name="endDay"  class="ddlInput3">
                 <option value="">Day</option>
                 <option value="1">1</option>
                 <option value="1">2</option>
@@ -113,7 +128,7 @@
                 <option value="1">20</option>
                 <option value="1">31</option>
             </select>
-            <select name="endMonth">
+            <select name="endMonth"  class="ddlInput3">
                 <option value="">Month</option>
                 <option value="1">Jan</option>
                 <option value="2">Feb</option>
@@ -128,7 +143,7 @@
                 <option value="11">Nov</option>
                 <option value="12">Dec</option>
             </select>
-            <select name="endYear">
+            <select name="endYear"  class="ddlInput3">
                 <option value="">Year</option>
                 <option value="2016">2016</option>
                 <option value="2017">2017</option>
@@ -137,26 +152,40 @@
                 <option value="2020">2020</option>
             </select>
         </div>
+        <div class="clearme"></div>
+        <div class="fieldSeperator"></div>
         <div>
-            <input name="budget" type="text" placeholder="Campaign Budget" />
+            <input name="budget" type="text" placeholder="Campaign Budget" class="txtInput" />
         </div>
+        <div class="fieldSeperator"></div>
         <div>
-            <div>Campaign Image</div>
-            <div>
-                <input name="image" type="text" />
-                <a href="#" class="btn btn-default">Choose File</a>
+            <div class="lblWrapper">Campaign Image</div>
+            <div class="genericWrapper">
+                <input name="image" type="text" class="txtInputSM"/>
+                <a href="#" class="bttnFileUpload">Choose File</a>
             </div>
-            <div>http://image.link/location</div>
+            <div class="genericWrapper">http://image.link/location</div>
         </div>
-        <div>Campaign Status</div>
+        <div class="fieldSeperator"></div>
+        <div class="lblWrapper">Campaign Status</div>
+        <div class="clearme"></div>
         <div>
-            <select name="active">
+            <select name="active" class="ddlInput">
                 <option value="1">Active</option>
                 <option value="0">Inactive</option>
             </select>
         </div>
-        <div>
-            <input type="submit" value="Create Campaign" class="btn btn-primary">
+        <div class="space35"></div>
+        <div class="clearme"></div>
+        <div class="space35"></div>
+    </div>
+        <div class="clearme"></div>
+        <div class="space20"></div>
+        <div class="bg_createacct">
+            <div class="formwrapper">
+                <input type="submit" value="Create Campaign" class="bttnRegister" />
+                <div class="bttnArrow"></div>
+            </div>
         </div>
     </form>
 </template>
