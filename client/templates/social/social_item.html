@@ -1,4 +1,24 @@
 <template name="socialItem">
+    <div class="socialStatWrap">
+        <div class="socialStat">
+            {{ numberOfTweets}}
+            <div class="socialStatLabel">
+                TWEETS
+            </div>
+        </div>
+        <div class="socialStat">
+            {{ numberOfFollowing}}
+            <div class="socialStatLabel">
+                FOLLOWING
+            </div>
+        </div>
+        <div class="socialStat thirtyfour">
+            {{ numberOfFollowers}}
+            <div class="socialStatLabel">
+                FOLLOWERS
+            </div>
+        </div>
+    </div>
     <div class="socialHeadWrap">
         <div class="formwrapper">
             <div class="iconTwitter"></div>
@@ -14,26 +34,6 @@
             </div>
             <div>
                 {{ profileName }}
-            </div>
-        </div>
-    </div>
-    <div class="socialStatWrap">
-        <div class="socialStat thirtyfour">
-            {{ numberOfTweets}}
-            <div class="socialStatLabel">
-                TWEET
-            </div>
-        </div>
-        <div class="socialStat">
-            {{ numberOfFollowing}}
-            <div class="socialStatLabel">
-                FOLLOWING
-            </div>
-        </div>
-        <div class="socialStat">
-            {{ numberOfFollowers}}
-            <div class="socialStatLabel">
-                FOLLOWERS
             </div>
         </div>
     </div>
