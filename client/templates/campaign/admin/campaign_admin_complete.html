@@ -1,7 +1,14 @@
 <template name="campaignAdminComplete">
-    {{> campaignAdminMenu}}
+    <div class="formwrapper">
+        <h1>COMPLETE CAMPAIGNS</h1>
+    </div>
 
-    {{#each campaigns}}
-        {{> campaignAdminCompleteItem}}
-    {{/each}}
+    {{> campaignAdminMenu}}
+	<div class="grayBack">
+		<div class="campaignContentWrap">
+	    {{#each campaigns}}
+	        {{> campaignAdminCompleteItem}}
+	    {{/each}}
+		</div>
+	</div>
 </template>

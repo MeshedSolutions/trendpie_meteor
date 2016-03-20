@@ -1,14 +1,14 @@
 <template name="campaignAdminCompleteItem">
-    <div>
+    <div class="campaignName">
         {{name}}
     </div>
-    <div>
-        Status: {{status}}
+    <div class="campaignStart">
+        <span class="timeLable">Status:</span> {{status}}
     </div>
-    <div>
-        End Date: {{MonthAbbreviation endMonth}}, {{endDay}}, {{endYear}}
+    <div class="campaignStart">
+        <span class="timeLable">End Date:</span> {{MonthAbbreviation endMonth}}, {{endDay}}, {{endYear}}
     </div>
-    <div>
-        <a href="#">Edit</a>
+    <div class="editWrapper">
+        <a href="#"><div class="editCampaign"></div></a>
     </div>
 </template>
